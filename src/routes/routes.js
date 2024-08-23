@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// load all objects here
-const Countries = require('../objects/countries');
+// load all controllers here
+const Countries = require('../controllers/countries');
 const countriesObj = new Countries();
 
 router.get('/country/countryListing', countriesObj.getCountries);
